@@ -1,0 +1,102 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #FFCCE0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    top: 0px;
+    left: -250px;
+    padding:  30px;
+    width: 250px;
+    background-color: #222;
+    color: white;
+    height: 70vh;
+    transition: 0.3 ease;
+}
+.sidebar.active{
+    left: 0;
+}
+.close-icon{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 33px;
+}
+.sidebar ul{
+    list-style-type: none;
+    font-size: 18px;  
+}
+.sidebar ul li{
+    margin-bottom: 20px;
+}
+.sidebar ul li:hover{
+    color: orange;
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.profile-icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+.profile button{
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #FFCCE0;
+}
+.profile button:hover{
+    color: #222222bc;
+}
+@media(max-width:480px){
+    .navbar{
+        
+        padding: 20px 20px;
+        
+    }
+    .heading{
+        gap: 10px;
+        font-size: 18px;
+    }
+    .search input{
+       width: 40px;
+    }
+    .profile{
+        gap: 5px;
+        font-size: 16px;
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+}

@@ -1,0 +1,12 @@
+.mens{
+    margin-top: 90px;
+    background-color: white;
+}
+.mens h1{
+    font-size: 35px;
+    text-align: center;
+    margin: 10px auto;
+}
+.mens-product-list{
+    background-color: white;
+}

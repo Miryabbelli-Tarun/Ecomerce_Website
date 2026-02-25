@@ -1,0 +1,50 @@
+
+.hero {
+  display: flex;
+  width: 70%;
+  height: 70vh; 
+  margin: auto;      
+}
+
+.hero .left,
+.hero .right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+.hero p {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 2px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hero .left p {
+  left: 30px;
+}
+
+.hero .right p {
+  right: 30px;
+}
+
+.hero .left:hover img,
+.hero .right:hover img {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+}
+
