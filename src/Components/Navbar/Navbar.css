@@ -43,6 +43,7 @@
 }
 .sidebar ul li{
     margin-bottom: 20px;
+    color: white;
 }
 .sidebar ul li:hover{
     color: orange;

@@ -1,0 +1,80 @@
+.footer{
+    background-color: rgba(94, 104, 104, 0.548);
+    padding: 30px 40px; 
+}
+.footer-menus{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-around;
+}
+.footer-menu ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+.footer-menu ul li{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+}
+
+.help-menu ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+.help-menu ul li{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+}
+
+.subscribe-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.subscribe-menu p,.subscribe-menu label{
+    font-size: 20px;
+    color: black;
+}
+.subscribe-menu  .email{
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: black;
+}
+.checkbox-container{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+.checkbox-container input{
+    width: auto;
+    transform: scale(1.5);
+    
+}
+.subscribe-menu button{
+    padding: 8px 10px;
+    background-color: black;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: 1px solid black;
+}
+.subscribe-menu button:hover{
+    background-color: gold;
+}
+.designer{
+    text-align: center;
+    font-size: 22px
+}
+@media(max-width:480px){
+    .footer-menus{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}

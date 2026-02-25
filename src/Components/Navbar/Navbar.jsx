@@ -15,9 +15,9 @@ const Navbar = () => {
           <div className={`sidebar ${isOpen ?'active' :''}`}>
             <IoClose className='close-icon' onClick={()=>setIsOpen(false)} />
             <ul>
-              <li>Shop All</li>
-              <li>Men</li>
-              <li>Women</li>
+              <Link to='/'><li>Shop All</li></Link>
+              <Link to='/products/men'><li>Men</li></Link>
+              <Link to='/products/women'><li>Women</li></Link>
               <li>About</li>
               <li>Contact</li>
             </ul>

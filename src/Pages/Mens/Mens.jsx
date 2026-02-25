@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 const Mens = () => {
     let [products,setProducts]=useState([])
     let fetchProducts=async ()=>{
-        try{const products_url=`https://dummyjson.com/products?limit=196`
+        try{const products_url=`https://dummyjson.com/products/category/mens-shirts`
         let response=await fetch(products_url);
         let data=await response.json()
         setProducts(data.products)}
